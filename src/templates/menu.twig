@@ -1,16 +1,46 @@
-
+{% extends '_base.twig' %}
 {% block title %}Menu{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col p-4">
-            <h1>This a basic template to start a website based on Bootstrap&nbsp;{{ bootstrapVersion }}</h1>
-            <p>We also have <a href="another-page">another page</a></p>
-        </div>
-        <div class="col">
-            <img class="img-fluid" src="/img/dummy.jpg" alt="dummy image">
-        </div>
+
+<h1>Menu</h1>
+
+  <section class="d-flex row justify-content-around">
+
+    <div class="col">
+      <h2>Expresso Coffee</h2>
+      <div class="row">
+        <ul class="col">
+          <li class="d-flex">Espresso <span class="d-flex justify-content-end">3.8</span></li>
+          <li>Double espresso <span>4.9</span></li>
+          <li>American<span>o 5</span></li>
+          <li>Espresso machiato <span>4.3</span></li>
+          <li>Cappuccino <span>5.2</span></li>
+          <li>Flat White <span>5.9</span></li>
+          <li>Latte <span>5.9</span></li>
+          <li>Extra shot <span>1.1</span></li>
+        </ul> 
+      </div>
     </div>
-</div>
+
+    <div class="col">
+      <h2>Filter Coffee</h2>
+      <div class="row">
+        <ul class="col">
+          <li>House Drip Coffee 4.5</li>
+          <li>Aeropress 5.5</li>
+          <li>V60 6.5</li>
+          <li>Kalita 12</li>
+        </ul>
+      </div>
+      <h2>Coffee Specialties </h2>
+      <div class="row">
+        <ul class="col">
+          <li>Cascara 4.9</li>
+          <li>Irish coffee 10.9</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}
